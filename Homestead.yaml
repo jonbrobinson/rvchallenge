@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Users/Jonbrobinson/code/redventures
+        to: /home/vagrant/Code/redventures
+sites:
+    -
+        map: redventures.app
+        to: /home/vagrant/Code/redventures/public
+databases:
+    - homestead
+name: redventures
+hostname: redventures
